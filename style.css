@@ -33,6 +33,7 @@ header {
     display: block;
     text-align: center;
     margin: 0 auto;
+    transform: translateX(-80px);
 }
 
 .text {
