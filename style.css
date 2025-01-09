@@ -222,6 +222,7 @@ html {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     text-align: left;
     transition: background-color 0.3s ease, color 0.3s ease;
+    position: relative;
 }
 
 .service h3 {
@@ -246,6 +247,22 @@ html {
 
 .service:hover p {
     color: #ffffff;
+}
+
+.service img.service-image {
+    width: 200px;
+    max-height: 200px;
+    object-fit: contain;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    background-color: #FFFFFF;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service img.service-image:hover {
+    transform: scale(1.02);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
 }
 
 .prod {
@@ -595,6 +612,10 @@ hr {
     
     .service p {
         font-size: 0.8rem;
+    }
+    
+    .service img.service-image {
+        max-height: 150px;
     }
     
     .contact-item a {
