@@ -136,6 +136,65 @@ section {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 20px;
+    margin: 20px;
+}
+
+.company-info, .director-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    background-color: #f9f9f9;
+    width: 48%;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+}
+
+.company-info img, .director-info img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 10px;
+    border: 3px solid #ccc;
+    transition: border-color 0.3s ease;
+}
+
+.company-info .name, .director-info .name {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #333;
+    margin: 5px 0;
+}
+
+.company-info p, .director-info p {
+    margin: 5px 0;
+    color: #666;
+}
+
+.company-info:hover, .director-info:hover {
+    background-color: #1D1842;
+    transform: scale(1.05);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+.company-info:hover .name, .company-info:hover p,
+.director-info:hover .name, .director-info:hover p {
+    color: white;
+}
+
+.company-info:hover img, .director-info:hover img {
+    border-color: white;
+}
+
 html {
     scroll-behavior: smooth;
 }
