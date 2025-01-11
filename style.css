@@ -120,7 +120,7 @@ section {
 
 .about-us-introduction {
     grid-column: 1;
-    text-align: left;
+    text-align: justify;
 }
 
 .about-us-image {
